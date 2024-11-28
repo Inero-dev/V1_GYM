@@ -1,8 +1,24 @@
 <div class="card">
-    <div class="card-body text-center" >
-      <h1>
-        Actividades GYM 4V
-      </h1>
+    <div class="card-body text-center">
+        <h1>
+            Actividades GYM 4V
+        </h1>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Lugar</th>
+                    <th scope="col">Monitor</th>
+                    <th scope="col">Tipo</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
 
+                @for (actividad of actividades; track $index){
+                    <actividad_component [actividad]="actividad"></actividad_component>
+                }
+
+            </tbody>
+        </table>
     </div>
-  </div>
+</div>
