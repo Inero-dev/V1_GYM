@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import {Servicios} from '../Servicios/servicios.service'
 import {ActividadComponent} from '../actividad/actividad.component'
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'tabla',
-  imports: [ActividadComponent],
+  imports: [ActividadComponent, CommonModule],
   templateUrl: './tabla.component.html',
   styleUrl: './tabla.component.scss'
 })

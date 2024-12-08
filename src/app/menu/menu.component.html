@@ -1,9 +1,25 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary align-middle start w-100 h-100" id="menuNavbar">
 
-<nav class="navbar bg-body-tertiary h-100">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://www.shutterstock.com/image-vector/letter-4-fitness-logo-design-260nw-2176027831.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Bootstrap
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://www.shutterstock.com/image-vector/letter-4-fitness-logo-design-260nw-2176027831.jpg" alt="Logo"
+        width="80" height="70" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Actividades
       </a>
+      <ul class="dropdown-menu ms-5">
+        <li><a class="dropdown-item" href="#actividades">TODAS</a></li>
+        <li *ngFor="let actividad of actividades">
+          <opcion-menu [actividad]="actividad" />
+        </li>
+      </ul>
     </div>
-  </nav>
+
+  </div>
+</nav>

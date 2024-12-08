@@ -1,14 +1,13 @@
-<tr>
-    <td>
-        {{fecha}}
-    </td>
-    <td>
-        {{lugar}}
-    </td>
-    <td>
-        {{monitor}}
-    </td>
-    <td>
-        {{tipo}}
-    </td>
-</tr>
+<div class="card my-3" id="{{ id }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ tipo }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ fecha }}</h6>
+      <p class="card-text">
+        <strong>Lugar:</strong> {{ lugar }}<br>
+        <strong>Monitor:</strong> {{ monitor }}
+      </p>
+      <a href="#" class="btn btn-primary">Detalles</a>
+    </div>
+  </div>
+  
+
